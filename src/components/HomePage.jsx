@@ -1,8 +1,8 @@
 // src/LandingPage.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../components/LandingPage.css';
-import img from '../styles/logo.png'
+import '../styles/LandingPage.css';
+import logo from '../styles/logo.png'
 
 const LandingPage = () => {
   return (
@@ -10,11 +10,11 @@ const LandingPage = () => {
       {/* Navbar */}
       <header className="navbar">
         <div className="logo-section">
-          <img src={img} alt="Logo" className="logo" />
+          <img src={logo} alt="Logo" className="logo" />
           <h1 className="site-title">CommUnity</h1>
         </div>
         <nav className="nav-links">
-          <Link to="/home" className="nav-link">Home</Link>
+          <Link to="/homepage" className="nav-link">Home</Link>
           <Link to="/about" className="nav-link">About Us</Link>
           <Link to="/contact" className="nav-link">Contact Us</Link>
         </nav>
@@ -27,7 +27,7 @@ const LandingPage = () => {
           <p className="welcome-description">
             The ultimate platform designed to streamline housing society management and foster community connections. Whether you're a resident, administrator, or non-resident, CommUnity brings convenience to your fingertips with a comprehensive set of features tailored for everyone.
           </p>
-          <Link to="/signup">
+          <Link to="/login">
             <button className="get-started-button">Get Started</button>
           </Link>
         </div>
